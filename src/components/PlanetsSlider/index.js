@@ -9,14 +9,17 @@ const PlanetsSlider = props => {
 
   const settings = {
     dots: false,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
+    arrows: true,
   }
 
   return (
     <div className="planets-slide-container" data-testid="planets">
       <h1 className="heading">PLANETS</h1>
+
       <Slider {...settings}>
         {planetsList.map(eachPlanet => (
           <PlanetItem key={eachPlanet.id} planetDetails={eachPlanet} />

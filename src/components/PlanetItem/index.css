@@ -1,1 +1,28 @@
-/* Write your CSS here */
+.planet-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.planet-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.head {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: 'Roboto';
+  margin-top: 25px;
+}
+
+.para {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Roboto';
+  max-width: 650px;
+  line-height: 1.5;
+}
